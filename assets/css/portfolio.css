@@ -62,13 +62,13 @@
 }
 
 .card-btn {
-    display: none;
+    display: block;
     width: 100%;
-    padding: 1.5rem;
-    font-size: 2rem;
+    padding: 1.3rem;
+    font-size: 1.8rem;
     text-align: center;
     color: #3363ff;
-    background-color: #d8e0fd;
+    background-color: #e8edff;
     border: none;
     border-radius: 0.4rem;
     transition: 0.2s;
