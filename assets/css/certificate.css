@@ -1,0 +1,129 @@
+/* todo */
+
+.grid-certificates {
+    padding: 0 3rem 0 3rem;
+    display: grid;
+    grid-gap: 6rem;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    align-items: center;
+}
+
+.grid-certificate-item {
+    background-color: #fff;
+    border-radius: 0.4rem;
+    overflow: hidden;
+    /*box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);*/
+    transition: 0.2s;
+}
+
+.certificate-img-container {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    grid-gap: 0;
+}
+
+.certificate-img {
+    margin: auto;
+    display: block;
+    max-width: 100%;
+    height: 30rem;
+    object-fit: scale-down;
+    margin-bottom: 1rem;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.certificate-img:hover {
+    transform: translateY(-0.5%);
+    box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
+}
+
+.card-certificate-content {
+    justify-content: center;
+    padding: 1.5rem 3rem 3rem 3rem;
+}
+
+.card-certificate {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.2rem;
+}
+
+.card-certificate > *:not(:last-child) {
+    display: block;
+    margin-right: 1.5rem;
+}
+
+.card-certificate-ico {
+    width: 5rem;
+    height: 3rem;
+    object-fit:scale-down;
+}
+
+.certificate-date {
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #0d0d0d;
+}
+
+.certificate-header {
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 500;
+    height: 4rem;
+    color: #0d0d0d;
+    margin-bottom: 1.5rem;
+}
+
+.card-text {
+    font-size: 1.6rem;
+    letter-spacing: 0.1rem;
+    line-height: 1.7;
+    color: #3d3d3d;
+    margin-bottom: 2.5rem;
+}
+
+.certificate-btn {
+    display: block;
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 1.5rem;
+    text-align: center;
+    color: #3363ff;
+    /*background-color: #d8e0fd;*/
+    background-color: #d8e0fd00;
+    border: none;
+    border-radius: 0.4rem;
+    transition: 0.2s;
+    cursor: pointer;
+    letter-spacing: 0.1rem;
+    text-decoration: none;
+    font-weight: 100;
+}
+
+.certificate-btn span {
+    margin-left: 1rem;
+    transition: 0.2s;
+}
+
+.certificate-btn:hover,
+.certificate-btn:active {
+    /*background-color: #c2cffc;*/
+}
+
+.certificate-btn:hover span,
+.certificate-btn:active span {
+    margin-left: 1.5rem;
+}
+
+
+
+@media only screen and (max-width: 60em) {
+
+    .grid-certificates {
+        grid-gap: 3rem;
+    }
+}
