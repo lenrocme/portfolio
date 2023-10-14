@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quick Shopping List</title>
+    <link rel="icon" href="images/icons/suitcase-portfolio-svgrepo-com.svg" type="image/x-icon">
+    <link rel="stylesheet" href="../../assets/css/portfolioPage.css">
+    <link rel="stylesheet" href="../../assets/css/modal_img.css">
+</head>
+<body>
+    <header>
+        <a href="../../index.html#portfolio" class="back-button">&larr;</a>
+        <h1>Quick Shopping List</h1>
+    </header>
+
+    <div class="container">
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/q-BrlzNZX1s" frameborder="0" allowfullscreen title="application video"></iframe>
+        </div>
+
+        <div class="date">
+            Date: April 2022
+        </div>
+
+        <div class="top-link">
+            <a href="https://github.com/lenrocme/ShopList" target="_blank">GitHub Repository</a>
+        </div>
+
+        <div class="top-link">
+            <a href="https://play.google.com/store/apps/details?id=com.malferma.shopitemsfragmentsbm&pcampaignid=web_share" target="_blank">Download on Google Play</a>
+        </div>
+
+         <!-- Tech Stack Section -->
+         <div class="tech-stack">
+            <h2>Tech Stack:</h2>
+            <ul>
+                <li>Kotlin</li>
+                <li>Shared Preferences</li>
+                <li>View XML approach</li>
+                <li>Android Studio IDE</li>
+                <li>MVC</li>
+            </ul>
+        </div>
+
+        <div class="description">
+            <h2>Description:</h2>
+            <p>
+                Quick Shopping List is a highly customizable Android application. With this app, 
+                you can create multiple lists and effortlessly add any number of products to them. 
+                You can mark items as done or undo with a simple swipe gesture. Additionally, 
+                the app offers three theme options to enhance the user experience.
+            </p>
+        </div>
+
+        <div class="story">
+            <h2>Story:</h2>
+            <p>
+                This was my very first Android application, and I went through a lot of challenges 
+                during its development. My biggest mistake was diving into it without acquiring a 
+                solid theoretical understanding of the Android API and SDK. The result was a lot of 
+                code that I'd rather never see again. As a result, the application is no longer 
+                receiving updates. Btw I used Shared Preferences instead of SQL solution like Room.
+            </p>
+        </div>
+        <!-- Image Carousel (Accordion) Section -->
+        <div class="carousel-container">
+            <div class="carousel">
+                <div class="carousel-item"><img class="carousel-image img-to-full-size" src="../../images/portfolio_img/qshoplist/unnamed.webp" alt="Image 1"></div>
+                <div class="carousel-item"><img class="carousel-image img-to-full-size" src="../../images/portfolio_img/qshoplist/unnamed1.webp" alt="Image 2"></div>
+                <div class="carousel-item"><img class="carousel-image img-to-full-size" src="../../images/portfolio_img/qshoplist/unnamed2.webp" alt="Image 3"></div>
+                <div class="carousel-item"><img class="carousel-image img-to-full-size" src="../../images/portfolio_img/qshoplist/unnamed3.webp" alt="Image 4"></div>
+                <div class="carousel-item"><img class="carousel-image img-to-full-size" src="../../images/portfolio_img/qshoplist/unnamed4.webp" alt="Image 5"></div>
+            </div>
+        </div>
+    </div>
+    <!-- The Modal to show image full size-->
+    <div id="imgModal" class="modal-img">
+        <span class="close">&times;</span>
+        <div class="img-modal-container">
+            <img class="modal-content" id="imgModalPlaceholder" alt="">
+        </div>
+    </div>
+    <script src="../../assets/script/modal_img.js"></script>
+</body>
+</html>

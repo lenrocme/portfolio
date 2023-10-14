@@ -1,3 +1,7 @@
+.home {
+    height: 96vh;
+}
+
 .container.py-5 {
     height: 100%;
 }
@@ -8,7 +12,7 @@
     align-items: center;
     justify-content: center;
     height: 100%;
-    padding-top: 10%;
+    margin-top: 6%;
 }
 
 .home-img-container {
@@ -25,7 +29,7 @@
 }
 
 .home-about > p {
-    padding-top: 4%;
+    padding-top: 3%;
     padding-left: 3%;
     padding-right: 3%;
     margin: auto;
@@ -62,7 +66,8 @@
 .home-links {
     display: grid;
     text-align: center;
-    margin: 2.5rem;
+    margin: 2rem;
+    padding-bottom: 2rem;
     max-width: 800px;
 }
 
@@ -76,4 +81,55 @@
 
 .home-links > a:hover {
     color: #aaaaaa;
+}
+
+
+@media only screen and (max-width: 768px) {
+
+    .container-home {
+        margin-top: 0%;
+    }
+
+    .home-img {
+        width: 230px;
+        margin-bottom: 3%;
+    }
+
+    .home-about > p {
+        max-width: 92%;
+        font-size: 1.4rem;
+        line-height: 1.2;
+        margin-bottom: 1.4rem;
+    }
+
+    .tech-stack-list {
+        max-width: 90%;
+    }
+
+    .tech-stack-item {
+        margin-left: 0.3rem;
+        margin-right: 0.3rem;
+    
+    }
+    
+    .tech-stack-ico {
+        width: 2.6rem;
+    }
+    
+    .tech-stack-break {
+        height: 1.4rem;
+    }
+
+    .home-links {
+        margin: 1rem;
+        max-width: 800px;
+    }
+    
+    .home-links > a {
+        color: #3d3d3d;
+        font-size: 1.5rem;
+        letter-spacing: 0.15rem;
+        line-height: 1.4;
+        font-weight: bold;
+    }
 }

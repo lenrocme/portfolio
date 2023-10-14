@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scalable capital extension</title>
+    <link rel="icon" href="images/icons/suitcase-portfolio-svgrepo-com.svg" type="image/x-icon">
+    <link rel="stylesheet" href="../../assets/css/portfolioPage.css">
+    <link rel="stylesheet" href="../../assets/css/modal_img.css">
+</head>
+<body> 
+    <header>
+        <a href="../../index.html#portfolio" class="back-button">&larr;</a>
+        <h1>Scalable capital extension</h1>
+    </header>
+
+    <div class="container">
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/qlcDPibG22" frameborder="0" allowfullscreen title="application video"></iframe>
+        </div>
+
+        <div class="date">
+            Date: August 2023
+        </div>
+
+         <!-- Tech Stack Section -->
+         <div class="tech-stack">
+            <h2>Tech Stack:</h2>
+            <ul>
+                <li>JavaScript</li>
+                <li>Plotly js</li>
+                <li>Git</li>
+                <li>VSC IDE</li>
+            </ul>
+        </div>
+
+        <div class="description">
+            <h2>Description:</h2>
+            <p>
+                This is a browser extension designed specifically for the Scalable Capital website 
+                <a href="https://de.scalable.capital/">link</a>. It inserts a chart into the website's Portfolio page, 
+                allowing users to visualize the state of their portfolio not just in terms of the 
+                amount of money but also in percentage terms. Users can choose between two tabs: 
+                one displays only stocks, and the other includes both stocks and groups in the diagram. 
+                Additionally, users have the option to include the percentage of cash relative 
+                to other stocks in the diagram.            
+            </p>
+            <p>
+                Data is collected from the client side only to generate the diagram, 
+                there are no any endpoints used to collect and get any data from the user.
+            </p>
+        </div>
+
+        <div class="story">
+            <h2>Story:</h2>
+            <p>
+                I conducted an experiment with one of my good friends (Hello, Christian), who works as 
+                a software developer. After creating this extension and ensuring that it worked correctly, 
+                I called him and shared my screen, displaying the website where the content of 
+                this extension had already been inserted. Without revealing which part of the website 
+                was original and which was my content, 
+                I asked him, 'Can you please tell me which part of the website is the content inserted by my extension?'
+                What happened next was quite amusing. He responded, saying, 'The chart is definitely not 
+                yours because it's a must-have for investment-related websites where users need to 
+                visualize their portfolio's status graphically'. Well, he definitely has a valid point, 
+                and his perspective is sound. However, as you already know, the Pie Chart was created by my extension. 
+            </p>
+            <p>
+                Why did I decide to write about this experiment here? Well, when I initially 
+                started creating this application, I questioned whether there was a purpose for this extension. 
+                This experiment serves as a compelling answer to my own question.
+            </p>
+            <p>
+                In the realm of 'neo-brokers,' a graphical view is not just a want but a necessity. 
+                It's essential not only for clients but also for video bloggers. Many advertisements 
+                are now integrated into videos by YouTubers. As someone deeply interested in investments 
+                and actively learning about it for a year, I've watched countless YouTubers showcasing 
+                their portfolios, and almost every one of them uses graphical charts to display their 
+                portfolio's status. I can't recall a single one who didn't employ a graphical chart.
+            </p>
+            <p>
+                In my opinion YouTubers and other bloggers are among the most significant avenues 
+                for advertising investment through neo-brokers, as opposed to traditional methods. 
+                So, the moral of the story is that a graphical view of a portfolio's status is an 
+                absolute must-have.
+            </p>
+            <p>
+                P.S. <br>
+                After I invested all my savings namely 345,98 €, with the assistance of my extension, 
+                I gained a better graphical perspective on the state of my portfolio.
+            </p>
+        </div>
+    </div>
+    <!-- The Modal to show image full size-->
+    <div id="imgModal" class="modal-img">
+        <span class="close">&times;</span>
+        <div class="img-modal-container">
+            <img class="modal-content" id="imgModalPlaceholder" alt="">
+        </div>
+    </div>
+    <script src="assets/script/modal_img.js"></script>
+</body>
+</html>

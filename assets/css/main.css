@@ -142,11 +142,6 @@ footer{
     color: aqua;
 }
 
-
-.home {
-    height: 100vh;
-}
-
 /*cards section*/
 /*.card {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -165,6 +160,10 @@ footer{
 .container {
     max-width: 1450px; 
     margin: auto;  
+}
+
+.bg-overlay.last {
+    margin-bottom: 10rem;
 }
   
 .section-title-container {
@@ -244,5 +243,13 @@ hr {
 
     .hamburger.active .bar:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .section-title {
+        font-size: 2.0rem;
+    }
+
+    hr {
+        margin: 1.1em 0;
     }
 }

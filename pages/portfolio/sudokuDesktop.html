@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudoku Game</title>
+    <link rel="icon" href="images/icons/suitcase-portfolio-svgrepo-com.svg" type="image/x-icon">
+    <link rel="stylesheet" href="../../assets/css/portfolioPage.css">
+    <link rel="stylesheet" href="../../assets/css/modal_img.css">
+</head>
+<body> 
+    <header>
+        <a href="../../index.html#portfolio" class="back-button">&larr;</a>
+        <h1>Sudoku, Generator & Solver (PET)</h1>
+    </header>
+
+    <div class="container">
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/-RR6sMF6qnA" frameborder="0" allowfullscreen title="application video"></iframe>
+        </div>
+
+        <div class="date">
+            Date: May 2021
+        </div>
+
+        <div class="top-link">
+            <a href="https://github.com/lenrocme/SudokuSolver-GameApp" target="_blank">GitHub Repository</a>
+        </div>
+
+         <!-- Tech Stack Section -->
+         <div class="tech-stack">
+            <h2>Tech Stack:</h2>
+            <ul>
+                <li>C#</li>
+                <li>Windows Forms</li>
+                <li>MVC (Model-View-Controller) Architecture</li>
+                <li>Visual Studio IDE</li>
+            </ul>
+        </div>
+
+        <div class="description">
+            <h2>Description:</h2>
+            <p>
+                This application is both a Sudoku game and a Sudoku puzzle solver.
+                Users can generate Sudoku puzzles on their devices and play them.
+                The game offers three levels of difficulty from which users can choose.
+                Additionally, there is a toolbar that users can access for hints on specific puzzle cells.
+                <br> User input can be accomplished through physical devices or a virtual interface designed within the game.
+            </p>
+        </div>
+
+        <div class="story">
+            <h2>Story:</h2>
+            <p>
+                How did I end up creating this application? In short, it's quite a journey. I applied for an internship
+                 during my apprenticeship at a relatively large company. 
+                As part of the application process, they asked me to develop an application with 
+                a graphical user interface (GUI) that allowed users 
+                to input an incomplete Sudoku puzzle, and then my algorithm should solve it.
+                This was the test assignment to secure the internship, which I completed. What's more, 
+                I also developed an algorithm to generate these Sudoku puzzles  
+                This project marked my first experience with OOP, and I was
+                 determined to acquire more knowledge through hands-on experience.
+            </p>
+            <p>
+                However, I wasn't accepted for the internship. Despite the setback, I enjoyed the challenge, 
+                even though I wasn't adequately prepared at the time to write clean code and adhere 
+                to the Model-View-Controller (MVC) pattern.
+            </p>
+            <p>
+                P.S. <br> I took pride in my fully functioning application, particularly because I grew up in a 
+                time when PCs weren't popular, and smartphones didn't exist yet. As a result, one of my 'ingenious' 
+                ways to pass the time was solving Sudoku puzzles in newspapers. 
+                This childhood pastime unexpectedly became a valuable skill for this challenge.
+            </p>
+        </div>
+    </div>
+    <!-- The Modal to show image full size-->
+    <div id="imgModal" class="modal-img">
+        <span class="close">&times;</span>
+        <div class="img-modal-container">
+            <img class="modal-content" id="imgModalPlaceholder" alt="">
+        </div>
+    </div>
+    <script src="assets/script/modal_img.js"></script>
+</body>
+</html>

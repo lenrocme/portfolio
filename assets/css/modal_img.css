@@ -26,9 +26,9 @@
     margin: auto;
     display: block;
     width: 80%;
-    height:fit-content;
+    height: 95vh;
     max-width: 700px;
-    object-fit:scale-down;
+    object-fit: scale-down;
 }
 
 /* Caption of Modal Image */

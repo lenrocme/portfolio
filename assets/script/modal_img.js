@@ -2,7 +2,7 @@
 let modal = document.getElementById("imgModal");
 
 // Get the image and insert it inside the modal - use its "alt" text as a caption
-let imgCollection = document.getElementsByClassName("certificate-img");
+let imgCollection = document.getElementsByClassName("img-to-full-size");
 let modalImg = document.getElementById("imgModalPlaceholder");
 let captionText = document.getElementById("caption");
 

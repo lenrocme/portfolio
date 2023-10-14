@@ -1,11 +1,127 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Brunetto</title>
     <link rel="icon" href="images/icons/suitcase-portfolio-svgrepo-com.svg" type="image/x-icon">
+    <link rel="stylesheet" href="../../assets/css/portfolioPage.css">
+    <link rel="stylesheet" href="../../assets/css/modal_img.css">
 </head>
 <body>
-    <h1>Brunetto Page!</h1>
+    <header>
+        <a href="../../index.html#portfolio" class="back-button">&larr;</a>
+        <h1>Brunetto</h1>
+    </header>
+
+    <div class="container">
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/s1Rtj7-uJIE" frameborder="0" allowfullscreen title="application video"></iframe>
+        </div>
+
+        <div class="date">
+            Date: January 2023
+        </div>
+
+        <div class="top-link">
+            <a href="https://github.com/lenrocme/Brunetto" target="_blank">GitHub Repository</a>
+        </div>
+
+        <div class="top-link">
+            <a href="https://play.google.com/store/apps/details?id=com.malferma.brunetto&pcampaignid=web_share" target="_blank">Download on Google Play</a>
+        </div>
+
+         <!-- Tech Stack Section -->
+         <div class="tech-stack">
+            <h2>Tech Stack:</h2>
+            <ul>
+                <li>Kotlin</li>
+                <li>Jetpack Compose</li>
+                <li>Room</li>
+                <li>Hilt</li>
+                <li>Android Studio</li>
+                <li>MVVM Architecture</li>
+                <li>KtLint</li>
+                <li>Detekt</li>
+                <li>Git</li>
+            </ul>
+        </div>
+
+        <div class="description">
+            <h2>Description:</h2>
+            <p>
+                The Brunetto Application is a minimalist calculator designed for one primary 
+                purpose: <br> calculating net salaries from gross incomes and also offer detailed report.     
+                <br> <br>
+                The app also offers the option to share the calculated net salary and the 
+                comprehensive tax calculation report with the user. This feature can be 
+                helpful if the user wishes to share results with others or save them for 
+                future reference.  
+            </p>
+            <p>
+                The net salary is calculated based on the following user inputs:
+            </p>
+            <ul>
+                <li>Monthly/annual gross salary input</li>
+                <li>Tax class selection</li>
+                <li>Federal state</li>
+                <li>Church tax</li>
+                <li>Child allowances</li>
+                <li>Private/statutory health insurance</li>
+                <li>One-time payments, etc.</li>
+            </ul>
+            <p>
+                This app is exclusively tailored to German salaries and tax 
+                systems. All calculations are provided without a guarantee.
+            </p>
+        </div>
+
+        <div class="story">
+            <h2>Story:</h2>
+            <p>
+                In order to make this application work, I used the following 
+                <a href="https://www.bmf-steuerrechner.de/interface/programmablauf.xhtml">website</a>. 
+                It contains a PAP diagram and two tables data (results) that I utilized to 
+                test the application's functionality. These tables, with their 
+                data, were invaluable for writing tests, and having more data from 
+                various cases for testing would be even more beneficial.
+            </p>
+            <p>
+                I initially undertook the development of this application with the 
+                assumption that it would only take one to two weeks. I couldn't 
+                have been more wrong. The actual time spent on the project turned 
+                out to be around several months. There were a couple of reasons for 
+                this prolonged timeline. First, I didn't employ testing from the very 
+                beginning, and secondly, the updates from 2022 to 2023 on how the 
+                calculations should be done added complexity. In the end, I ended up 
+                handling multiple scenarios, including the changes that occurred 
+                in July 2023.
+            </p>
+            <p>
+                Despite the challenges and extended timeline, I found this experience 
+                to be quite rewarding. I'm considering the possibility of keeping the 
+                application updated with each year's changes in how the net salary 
+                is calculated.
+            </p>
+        </div>
+        <!-- Image Carousel (Accordion) Section -->
+        <div class="carousel-container">
+            <div class="carousel">
+                <div class="carousel-item"><img class="carousel-image img-to-full-size" src="../../images/portfolio_img/brunetto/Untitled1.png" alt="Image 1"></div>
+                <div class="carousel-item"><img class="carousel-image img-to-full-size" src="../../images/portfolio_img/brunetto/Untitled2.png" alt="Image 2"></div>
+                <div class="carousel-item"><img class="carousel-image img-to-full-size" src="../../images/portfolio_img/brunetto/Untitled3.png" alt="Image 3"></div>
+                <div class="carousel-item"><img class="carousel-image img-to-full-size" src="../../images/portfolio_img/brunetto/Untitled4.png" alt="Image 4"></div>
+                <div class="carousel-item"><img class="carousel-image img-to-full-size" src="../../images/portfolio_img/brunetto/Untitled5.png" alt="Image 5"></div>
+            </div>
+        </div>
+    </div>
+    <!-- The Modal to show image full size-->
+    <div id="imgModal" class="modal-img">
+        <span class="close">&times;</span>
+        <div class="img-modal-container">
+            <img class="modal-content" id="imgModalPlaceholder" alt="">
+        </div>
+    </div>
+    <script src="../../assets/script/modal_img.js"></script>
 </body>
 </html>
