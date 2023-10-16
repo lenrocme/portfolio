@@ -47,6 +47,11 @@ header {
     transition: transform 0.3s;
 }
 
+.carousel-item.one-full-size {
+    flex: 0 0 100%; /* Adjust the width based on the number of images */
+    transition: transform 0.3s;
+}
+
 .carousel-image {
     width: 100%;
     height: auto;
